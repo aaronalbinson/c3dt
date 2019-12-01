@@ -1,4 +1,4 @@
-# hello-world
+# C3DT
 
 ## Project setup
 ```
