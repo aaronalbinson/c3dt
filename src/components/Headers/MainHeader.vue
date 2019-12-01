@@ -1,18 +1,18 @@
 <template>
-  <h2 class="subHeader">{{ SubHeaderText }}</h2>
+  <h1 class="mainHeader">{{ MainHeaderText }}</h1>
 </template>
 
 <script>
 export default {
-  name: "SubHeader",
+  name: "MainHeader",
   props: {
-    SubHeaderText: String
+    MainHeaderText: String
   },
 };
 </script>
 
 <style scoped>
-    .subHeader {
+    .mainHeader {
         text-align: left;
         font-family: Arial, Helvetica, sans-serif;
     }

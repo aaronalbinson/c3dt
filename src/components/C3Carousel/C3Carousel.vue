@@ -16,9 +16,6 @@ import { Carousel, Slide } from "vue-carousel";
 
 export default {
   name: "C3Carousel",
-  props: {
-    msg: String
-  },
   components: {
     Carousel,
     Slide
