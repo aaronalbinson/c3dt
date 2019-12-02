@@ -1,13 +1,13 @@
 <template>
-  <carousel :scrollPerPage="true" :perPageCustom="[[0, 1], [700, 2], [1000, 3]]">
+  <carousel class="c3carousel" :scrollPerPage="true" :perPageCustom="[[0, 1], [700, 2], [1000, 3]]">
 
-    <slide>Slide 1 Content</slide>
-    <slide>Slide 2 Content</slide>
+    <slide><img alt="Headphones and phone" src="@/assets/01.png"></slide>
+    <slide><img alt="Desks with lamps" src="@/assets/02.png"></slide>
     <slide>
-      <div>Slide 3 Content</div>
-      <div v-if="!isMobile()">Slide 4 Content</div>
+      <div><img alt="Smart watch" src="@/assets/03.png"></div>
+      <div v-if="!isMobile()"><img alt="Robot" src="@/assets/04.png"></div>
     </slide>
-    <slide v-if="isMobile()">Slide 4 Content</slide>
+    <slide v-if="isMobile()"><img alt="Robot" src="@/assets/04.png"></slide>
   </carousel>
 </template>
 
@@ -34,4 +34,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .c3carousel img {
+    width: 100%;
+    height: auto;
+  }
 </style>

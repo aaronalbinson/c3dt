@@ -1,5 +1,7 @@
 <template>
-  <h1 class="mainHeader">{{ MainHeaderText }}</h1>
+  <div class="mainHeader">
+    <h1 class="mainHeaderText">{{ MainHeaderText }}</h1>
+  </div>
 </template>
 
 <script>
@@ -14,14 +16,17 @@ export default {
 <style scoped>
   @import url('https://fonts.googleapis.com/css?family=Prata&display=swap');
   .mainHeader {
-      font-family: 'Prata', serif;
-      font-size: 48px;
-      line-height: 50px;
-      margin-left: 70px;
-      display: inline;
-
+    max-width: 400px
   }
-  .mainHeader::before {
+  .mainHeaderText {
+    font-family: 'Prata', serif;
+    font-size: 48px;
+    line-height: 50px;
+    margin-left: 70px;
+    display: inline;
+    
+  }
+  .mainHeaderText::before {
     content: " ";
     width: 60px;
     height: 1px;

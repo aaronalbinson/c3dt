@@ -32,5 +32,7 @@ export default {
 </script>
 
 <style>
-
+    #card {
+        max-width: 500px;
+    }
 </style>
