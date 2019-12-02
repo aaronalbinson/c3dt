@@ -20,5 +20,8 @@ yarn build
 yarn lint
 ```
 
+### Netlify Demo Site
+https://aaronalbinson-c3dt.netlify.com/
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
