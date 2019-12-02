@@ -13,7 +13,9 @@ export default {
 
 <style scoped>
     .paragraph {
-        text-align: left;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Helvetica, sans-serif;
+        line-height: 24px;
+        font-weight: 300;
+        font-size: 14px;
     }
 </style>

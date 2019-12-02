@@ -13,7 +13,8 @@ export default {
 
 <style scoped>
     .subHeader {
-        text-align: left;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Helvetica, sans-serif;
+        font-weight: 300;
+        font-size: 18px;
     }
 </style>
