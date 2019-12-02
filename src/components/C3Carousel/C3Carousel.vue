@@ -60,6 +60,9 @@ export default {
 </script>
 
 <style>
+.c3carousel {
+  margin-bottom: 30px;
+}
 .c3carousel img {
   width: 100%;
   height: 100%;
@@ -84,5 +87,20 @@ export default {
   min-width: 40px;
   max-height: 4px;
   border-radius: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .c3carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: none;
+    object-position: top;
+  }
+  .c3carouselSlideImage {
+    height: auto;
+  }
+  .c3carousel .VueCarousel-pagination {
+    text-align: right;
+  }
 }
 </style>

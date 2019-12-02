@@ -38,4 +38,16 @@ export default {
   max-width: 500px;
   padding: 20px;
 }
+
+@media only screen and (min-width: 700px) {
+  #card {
+      margin-left: 90px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #card {
+      margin-left: 150px;
+  }
+}
 </style>
