@@ -20,6 +20,8 @@ export default {
         text-transform: uppercase;
         color: #000;
         text-decoration: none;
+        margin-bottom: 30px;
+        display: block;
     }
     .callToAction svg {
         margin-left: 5px;

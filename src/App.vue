@@ -25,7 +25,14 @@ export default {
 </script>
 
 <style>
+body {
+  margin: 0;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
+  max-width: 1500px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

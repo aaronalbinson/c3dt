@@ -1,13 +1,40 @@
 <template>
   <carousel class="c3carousel" :scrollPerPage="true" :perPageCustom="[[0, 1], [700, 2], [1000, 3]]">
-
-    <slide><img alt="Headphones and phone" src="@/assets/01.png"></slide>
-    <slide><img alt="Desks with lamps" src="@/assets/02.png"></slide>
     <slide>
-      <div><img alt="Smart watch" src="@/assets/03.png"></div>
-      <div v-if="!isMobile()"><img alt="Robot" src="@/assets/04.png"></div>
+      <div class="c3carouselSlide">
+        <div class="c3carouselSlideImage">
+          <img alt="Headphones and phone" src="@/assets/01.png" />
+        </div>
+      </div>
     </slide>
-    <slide v-if="isMobile()"><img alt="Robot" src="@/assets/04.png"></slide>
+    <slide>
+      <div class="c3carouselSlide">
+        <div class="c3carouselSlideImage">
+          <img alt="Desks with lamps" src="@/assets/02.png" />
+        </div>
+      </div>
+    </slide>
+    <slide>
+      <div class="c3carouselSlide">
+        <div>
+          <div class="c3carouselSlideImage">
+            <img alt="Smart watch" src="@/assets/03.png" />
+          </div>
+        </div>
+        <div v-if="!isMobile()">
+          <div class="c3carouselSlideImage">
+            <img alt="Robot" src="@/assets/04.png" />
+          </div>
+        </div>
+      </div>
+    </slide>
+    <slide v-if="isMobile()">
+      <div class="c3carouselSlide">
+        <div class="c3carouselSlideImage">
+          <img alt="Robot" src="@/assets/04.png" />
+        </div>
+      </div>
+    </slide>
   </carousel>
 </template>
 
@@ -32,10 +59,30 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-  .c3carousel img {
-    width: 100%;
-    height: auto;
-  }
+<style>
+.c3carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.c3carouselSlide {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.c3carouselSlideImage {
+  height: calc(100vw - 40px);
+  
+}
+.c3carousel .VueCarousel-pagination {
+  margin-bottom: 30px;
+}
+.c3carousel .VueCarousel-pagination .VueCarousel-dot-container button{
+  min-width: 40px;
+  max-height: 4px;
+  border-radius: 0;
+}
 </style>
