@@ -8,18 +8,21 @@
       CallToActionLink="https://google.com"
     />
     <C3Carousel />
+    <AgileCarousel />
   </div>
 </template>
 
 <script>
 import C3Carousel from "./components/C3Carousel/C3Carousel.vue";
+import AgileCarousel from "./components/C3Carousel/AgileCarousel.vue";
 import Card from "./components/Card/Card.vue";
 
 export default {
   name: "app",
   components: {
     C3Carousel,
-    Card
+    Card,
+    AgileCarousel
   }
 };
 </script>
